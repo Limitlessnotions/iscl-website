@@ -6,6 +6,7 @@ export default function CEOInsights() {
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="max-w-3xl">
+
           <p className="uppercase tracking-[0.3em] text-[#FEC619] text-sm font-semibold">
             Leadership Insights
           </p>
@@ -20,58 +21,84 @@ export default function CEOInsights() {
             governance, research methods, development systems, and
             evidence-based decision making.
           </p>
+
         </div>
 
         <div className="mt-12">
+
           <div className="bg-white rounded-3xl border border-gray-200 p-10 shadow-lg hover:shadow-2xl transition duration-300">
 
             <p className="text-[#FEC619] uppercase tracking-[0.25em] text-sm font-semibold">
-              Latest Publication
+              Publications & Thought Leadership
             </p>
 
             <h3 className="mt-4 text-3xl font-bold text-[#000066]">
-              Nigerians Are Holding the Country Together, Their Leaders Are Not
+              Samuel Ikani Articles & Publications
             </h3>
 
             <p className="mt-6 text-gray-600 leading-relaxed">
-              An opinion article by Samuel Ikani examining leadership,
-              governance and the resilience of ordinary Nigerians. Published
-              by multiple national news platforms on 1 July 2026.
+              Access practical insights, research perspectives, policy
+              commentary, and professional reflections from Samuel Ikani,
+              covering governance, development practice, MERL systems,
+              organizational learning, and strategic decision-making.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4">
+           <div className="mt-8">
 
               <Link
-                href="https://naijavoicenews.com/2026/07/01/nigerians-are-holding-the-country-together-their-leaders-are-not-opinion/"
+                href="https://samuelikani.org/blog.html"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center bg-[#000066] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#0B3AA4] transition"
+                className="inline-flex items-center bg-[#000066] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#0B3AA4] transition shadow-lg"
               >
-                Read on Naija Voice News →
-              </Link>
-
-              <Link
-                href="https://aljazirahnews.com/nigerians-are-holding-the-country-together-their-leaders-are-not/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center border border-[#000066] text-[#000066] px-6 py-3 rounded-full font-semibold hover:bg-[#000066] hover:text-white transition"
-              >
-                Read on Aljazirah News →
-              </Link>
-
-              <Link
-                href="/articles"
-                className="inline-flex items-center text-[#000066] font-semibold hover:underline"
-              >
-                View All Publications →
+                Read Articles →
               </Link>
 
             </div>
 
-          </div>
-        </div>
+            {/* Featured Publications */}
+            <div className="mt-10 border-t border-gray-200 pt-8">
 
-      </div>
+              <h4 className="text-xl font-bold text-[#000066]">
+                Featured Publications
+              </h4>
+
+              <div className="mt-6 rounded-2xl border border-gray-200 p-6 bg-gray-50">
+
+                <h5 className="text-lg font-semibold text-[#000066]">
+                  Nigerians Are Holding the Country Together, Their Leaders Are Not
+                </h5>
+
+                <p className="mt-3 text-gray-600">
+                  Published on multiple national news platforms.
+                </p>
+
+                <div className="mt-5 flex flex-wrap gap-4">
+
+                  <Link
+                    href="https://naijavoicenews.com/2026/07/01/nigerians-are-holding-the-country-together-their-leaders-are-not-opinion/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-[#000066] font-semibold hover:underline"
+                  >
+                    Read on Naija Voice News →
+                  </Link>
+
+                  <Link
+                    href="https://aljazirahnews.com/nigerians-are-holding-the-country-together-their-leaders-are-not/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-[#000066] font-semibold hover:underline"
+                  >
+                    Read on Aljazirah News →
+                  </Link>
+
+                </div>
+
+              </div>
+
+            </div>
+
     </section>
   );
 }
