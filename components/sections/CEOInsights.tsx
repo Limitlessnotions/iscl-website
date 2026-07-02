@@ -4,9 +4,7 @@ export default function CEOInsights() {
   return (
     <section className="py-20 bg-[#F8F9FC]">
       <div className="max-w-7xl mx-auto px-6">
-
         <div className="max-w-3xl">
-
           <p className="uppercase tracking-[0.3em] text-[#FEC619] text-sm font-semibold">
             Leadership Insights
           </p>
@@ -21,13 +19,10 @@ export default function CEOInsights() {
             governance, research methods, development systems, and
             evidence-based decision making.
           </p>
-
         </div>
 
         <div className="mt-12">
-
           <div className="bg-white rounded-3xl border border-gray-200 p-10 shadow-lg hover:shadow-2xl transition duration-300">
-
             <p className="text-[#FEC619] uppercase tracking-[0.25em] text-sm font-semibold">
               Publications & Thought Leadership
             </p>
@@ -43,8 +38,7 @@ export default function CEOInsights() {
               organizational learning, and strategic decision-making.
             </p>
 
-           <div className="mt-8">
-
+            <div className="mt-8">
               <Link
                 href="https://samuelikani.org/blog.html"
                 target="_blank"
@@ -53,18 +47,15 @@ export default function CEOInsights() {
               >
                 Read Articles →
               </Link>
-
             </div>
 
             {/* Featured Publications */}
             <div className="mt-10 border-t border-gray-200 pt-8">
-
               <h4 className="text-xl font-bold text-[#000066]">
                 Featured Publications
               </h4>
 
               <div className="mt-6 rounded-2xl border border-gray-200 p-6 bg-gray-50">
-
                 <h5 className="text-lg font-semibold text-[#000066]">
                   Nigerians Are Holding the Country Together, Their Leaders Are Not
                 </h5>
@@ -74,7 +65,6 @@ export default function CEOInsights() {
                 </p>
 
                 <div className="mt-5 flex flex-wrap gap-4">
-
                   <Link
                     href="https://naijavoicenews.com/2026/07/01/nigerians-are-holding-the-country-together-their-leaders-are-not-opinion/"
                     target="_blank"
@@ -92,13 +82,12 @@ export default function CEOInsights() {
                   >
                     Read on Aljazirah News →
                   </Link>
-
                 </div>
-
               </div>
-
             </div>
-
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
