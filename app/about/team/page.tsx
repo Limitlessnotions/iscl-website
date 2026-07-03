@@ -101,7 +101,7 @@ const teamMembers = [
   name: "Regina Moru",
   role: "intern",
   image: "/reg.jpg",
-  linkedin: "linkedin.com/in/regina-moru-a2b200417",
+  linkedin: "https://www.linkedin.com/in/regina-moru-a2b200417",
 },
 {
   name: "Silas E. Momoh",
