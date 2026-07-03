@@ -6,7 +6,7 @@ export default function TrainingCalendarPage() {
       month: "July 2026",
       theme: "MEAL — Systems That Drive Learning",
       programme: "MEAL DPro Certification",
-      dates: "20th – 31st (23rd, 26th & 30th excluded)",
+      dates: "20th – 31st (22nd & 29th excluded)",
       audience: "MEL Officers, Programme Managers",
       competency: "MEAL Frameworks, Adaptive Management",
     },

@@ -55,18 +55,12 @@ const teamMembers = [
   linkedin: "https://www.linkedin.com/in/aderonke-folagbade-5538a43b",
 },
 
-{
-  name: "Michael Oyinlola",
-  role: "Volunteer Advisor",
-  image: "/michael.jpg",
-  linkedin: "https://www.linkedin.com/in/michaeloyinlolamonitoringandevaluationspecialist",
-},
 
 {
-  name: "Victoria Ngoka",
-  role: "Program Officer - NGO",
-  image: "/victoriango.jpg",
-  linkedin: "https://www.linkedin.com/in/victoria-ngoka-ba2613280",
+  name: "Kamsiriochukwu W. Ehichanya ",
+  role: "intern",
+  image: "/kez.jpg",
+  linkedin: "https://www.linkedin.com/in/kamsiriochukwuworthy/",
 },
 
 {
@@ -89,12 +83,31 @@ const teamMembers = [
   image: "/antony.jpg",
   linkedin: "",
 },
+{
+  name: "Yusuf Samaila",
+  role: "intern",
+  image: "/yus.jpg",
+  linkedin: "https://www.linkedin.com/in/yusuf-samaila-166859249",
+},
 
 {
   name: "Sarah Kwewum",
   role: "Intern",
   image: "/sarah.jpg",
   linkedin: "https://www.linkedin.com/in/sarah-kwewum-743793199",
+},
+
+{
+  name: "Regina Moru",
+  role: "intern",
+  image: "/reg.jpg",
+  linkedin: "linkedin.com/in/regina-moru-a2b200417",
+},
+{
+  name: "Silas E. Momoh",
+  role: "intern",
+  image: "/silas.jpg",
+  linkedin: "https://www.linkedin.com/in/silas-momoh",
 },
 ];
 
