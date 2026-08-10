@@ -207,7 +207,12 @@ export default function Navbar() {
                 >
                   Media & Activities
                 </Link>
-
+                <Link
+  href="/knowledge-products"
+  className="..."
+>
+  Knowledge Products
+</Link>
                 <Link
                   href="/partners"
                   onClick={() => setMobileMenuOpen(false)}

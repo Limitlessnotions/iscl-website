@@ -10,6 +10,7 @@ import Resources from "@/components/sections/Resources";
 import Footer from "@/components/layout/Footer";
 import PromoPopup from "@/components/ui/PromoPopup";
 import CEOInsights from "@/components/sections/CEOInsights";
+import KnowledgeProducts from "@/components/sections/KnowledgeProducts";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
       <WhyISCL />
       <Projects />
       <CEOInsights />
-  
+  <KnowledgeProducts />
       <CTA />
       <Footer />
     </>
