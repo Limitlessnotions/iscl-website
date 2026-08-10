@@ -6,13 +6,13 @@ export default function KnowledgeProductsPage() {
       title: "From Input to Impact",
       subtitle:
         "The Complete Guide to Monitoring, Evaluation, Research & Learning",
-      image: "/from-input-to-impact.png",
+      image: "/from-input-to-impact.png.jpg",
     },
     {
       title: "From Influence to Impact",
       subtitle:
         "A Practical Guide to Monitoring and Evaluation of Advocacy and Policy Campaigns",
-      image: "/from-influence-to-impact.png",
+      image: "/from-influence-to-impact.png.jpg",
     },
   ];
 

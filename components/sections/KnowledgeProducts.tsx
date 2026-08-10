@@ -33,7 +33,7 @@ export default function KnowledgeProducts() {
 
             <div className="relative h-[320px] w-full">
               <Image
-                src="/images/books/from-input-to-impact.png"
+                src="/from-input-to-impact.png.jpg"
                 alt="From Input to Impact"
                 fill
                 className="object-contain"
@@ -55,7 +55,7 @@ export default function KnowledgeProducts() {
 
             <div className="relative h-[320px] w-full">
               <Image
-                src="/images/books/from-influence-to-impact.png"
+                src="/from-influence-to-impact.png.jpg"
                 alt="From Influence to Impact"
                 fill
                 className="object-contain"

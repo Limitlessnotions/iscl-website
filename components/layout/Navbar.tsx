@@ -11,8 +11,7 @@ export default function Navbar() {
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
 
   return (
-    <header className="w-full bg-[#000066]/95 backdrop-blur-md border-b border-white/10 sticky top-0 z-50">
-
+    <header className="bg-[#000066]">
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
 
         {/* LOGO */}
@@ -43,7 +42,6 @@ export default function Navbar() {
             onMouseEnter={() => setAboutOpen(true)}
             onMouseLeave={() => setAboutOpen(false)}
           >
-
             <button className="flex items-center gap-2 hover:text-[#FEC619] transition">
               About
 
@@ -57,13 +55,12 @@ export default function Navbar() {
 
             {/* DESKTOP DROPDOWN */}
             <div
-              className={`absolute top-full left-0 mt-4 w-64 bg-white rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.15)] overflow-hidden transition-all duration-300 ${
+              className={`absolute top-full left-0 mt-4 w-64 bg-white rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.15)] overflow-hidden transition-all duration-300 z-50 ${
                 aboutOpen
                   ? "opacity-100 visible translate-y-0"
                   : "opacity-0 invisible -translate-y-2"
               }`}
             >
-
               <div className="py-3">
 
                 <Link
@@ -87,6 +84,14 @@ export default function Navbar() {
                   Media & Activities
                 </Link>
 
+                {/* KNOWLEDGE PRODUCTS */}
+                <Link
+                  href="/knowledge-products"
+                  className="block px-6 py-4 text-[#000066] hover:bg-[#F8F9FC]"
+                >
+                  Knowledge Products
+                </Link>
+
                 <Link
                   href="/partners"
                   className="block px-6 py-4 text-[#000066] hover:bg-[#F8F9FC]"
@@ -94,27 +99,25 @@ export default function Navbar() {
                   Partners
                 </Link>
 
-                
-<Link
-  href="/about/privacy-policy"
-  className="block px-6 py-4 text-[#000066] hover:bg-[#F8F9FC]"
->
-  Privacy Policy
-</Link>
+                <Link
+                  href="/about/privacy-policy"
+                  className="block px-6 py-4 text-[#000066] hover:bg-[#F8F9FC]"
+                >
+                  Privacy Policy
+                </Link>
 
-<Link
-  href="/about/terms"
-  className="block px-6 py-4 text-[#000066] hover:bg-[#F8F9FC]"
->
-  Terms & Conditions
-</Link>
+                <Link
+                  href="/about/terms"
+                  className="block px-6 py-4 text-[#000066] hover:bg-[#F8F9FC]"
+                >
+                  Terms & Conditions
+                </Link>
 
               </div>
-
             </div>
-
           </div>
 
+          {/* SERVICES */}
           <Link
             href="/services"
             className="hover:text-[#FEC619] transition"
@@ -122,6 +125,7 @@ export default function Navbar() {
             Services
           </Link>
 
+          {/* PROJECTS */}
           <Link
             href="/#projects"
             className="hover:text-[#FEC619] transition"
@@ -135,6 +139,7 @@ export default function Navbar() {
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className="md:hidden text-white"
+          aria-label="Toggle menu"
         >
           {mobileMenuOpen ? <X size={30} /> : <Menu size={30} />}
         </button>
@@ -145,13 +150,13 @@ export default function Navbar() {
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 bg-[#000066] border-t border-white/10 ${
           mobileMenuOpen
-            ? "max-h-[500px] opacity-100"
+            ? "max-h-[700px] opacity-100"
             : "max-h-0 opacity-0"
         }`}
       >
-
         <div className="px-6 py-6 flex flex-col gap-6 text-white text-xl font-medium">
 
+          {/* HOME */}
           <Link
             href="/"
             onClick={() => setMobileMenuOpen(false)}
@@ -180,16 +185,16 @@ export default function Navbar() {
             <div
               className={`overflow-hidden transition-all duration-300 ${
                 mobileAboutOpen
-                  ? "max-h-[300px] mt-3"
+                  ? "max-h-[500px] mt-3"
                   : "max-h-0"
               }`}
             >
-
               <div className="flex flex-col gap-3 pl-4 text-white/80 text-sm">
 
                 <Link
                   href="/about"
                   onClick={() => setMobileMenuOpen(false)}
+                  className="hover:text-[#FEC619]"
                 >
                   About ISCL
                 </Link>
@@ -197,6 +202,7 @@ export default function Navbar() {
                 <Link
                   href="/about/team"
                   onClick={() => setMobileMenuOpen(false)}
+                  className="hover:text-[#FEC619]"
                 >
                   Team
                 </Link>
@@ -204,42 +210,50 @@ export default function Navbar() {
                 <Link
                   href="/media"
                   onClick={() => setMobileMenuOpen(false)}
+                  className="hover:text-[#FEC619]"
                 >
                   Media & Activities
                 </Link>
+
+                {/* KNOWLEDGE PRODUCTS */}
                 <Link
-  href="/knowledge-products"
-  className="..."
->
-  Knowledge Products
-</Link>
+                  href="/knowledge-products"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="hover:text-[#FEC619]"
+                >
+                  Knowledge Products
+                </Link>
+
                 <Link
                   href="/partners"
                   onClick={() => setMobileMenuOpen(false)}
+                  className="hover:text-[#FEC619]"
                 >
                   Partners
                 </Link>
 
                 <Link
-  href="/about/privacy-policy"
-  onClick={() => setMobileMenuOpen(false)}
->
-  Privacy Policy
-</Link>
+                  href="/about/privacy-policy"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="hover:text-[#FEC619]"
+                >
+                  Privacy Policy
+                </Link>
 
-<Link
-  href="/about/terms"
-  onClick={() => setMobileMenuOpen(false)}
->
-  Terms & Conditions
-</Link>
+                <Link
+                  href="/about/terms"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="hover:text-[#FEC619]"
+                >
+                  Terms & Conditions
+                </Link>
 
               </div>
-
             </div>
 
           </div>
 
+          {/* SERVICES */}
           <Link
             href="/services"
             onClick={() => setMobileMenuOpen(false)}
@@ -248,6 +262,7 @@ export default function Navbar() {
             Services
           </Link>
 
+          {/* PROJECTS */}
           <Link
             href="/#projects"
             onClick={() => setMobileMenuOpen(false)}
@@ -257,7 +272,6 @@ export default function Navbar() {
           </Link>
 
         </div>
-
       </div>
 
     </header>
