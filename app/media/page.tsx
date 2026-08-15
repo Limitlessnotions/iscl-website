@@ -15,37 +15,37 @@ const activities = [
     title: "BUILDING BETTER POLICIES STARTS WITH THE RIGHT SKILL",
     category: "Training",
     date: "April 2026",
-    image: "/media/activity1.jpg",
+    image: "/activity1.jpg",
   },
   {
     title: "Field Data Collection Exercise",
     category: "Research",
-    date: "March 2026",
-    image: "/media/activity2.jpg",
+    date: "July 2026",
+    video: "/field-data-collection.mp4",
   },
   {
     title: "Stakeholder Policy Dialogue",
     category: "Governance",
     date: "February 2026",
-    image: "/media/activity3.jpg",
+    image: "/activity3.jpg",
   },
   {
     title: "Monitoring & Evaluation Workshop",
     category: "M&E",
     date: "January 2026",
-    image: "/media/activity4.jpg",
+    image: "/activity4.jpg",
   },
   {
     title: "Development Research Conference",
     category: "Conference",
     date: "December 2025",
-    image: "/media/activity5.jpg",
+    image: "/activity5.jpg",
   },
   {
     title: "Community Engagement Programme",
     category: "Community",
     date: "November 2025",
-    image: "/media/activity6.jpg",
+    image: "/activity6.jpg",
   },
 ];
 
@@ -58,6 +58,7 @@ export default function MediaPage() {
 
         {/* Glow Effects */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-[#FEC619]/10 rounded-full blur-3xl" />
+
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
 
         <div className="relative max-w-7xl mx-auto px-6 text-center">
@@ -179,16 +180,28 @@ export default function MediaPage() {
                 className="group bg-white rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.08)] hover:-translate-y-2 transition duration-300"
               >
 
-                {/* IMAGE */}
+                {/* MEDIA */}
                 <div className="relative overflow-hidden">
 
-                  <Image
-                    src={activity.image}
-                    alt={activity.title}
-                    width={700}
-                    height={500}
-                    className="w-full h-[260px] object-cover group-hover:scale-105 transition duration-500"
-                  />
+                  {"video" in activity ? (
+                    <video
+                      src={activity.video}
+                      controls
+                      playsInline
+                      preload="metadata"
+                      className="w-full h-[260px] object-cover"
+                    >
+                      Your browser does not support the video tag.
+                    </video>
+                  ) : (
+                    <Image
+                      src={activity.image}
+                      alt={activity.title}
+                      width={700}
+                      height={500}
+                      className="w-full h-[260px] object-cover group-hover:scale-105 transition duration-500"
+                    />
+                  )}
 
                 </div>
 
@@ -227,6 +240,7 @@ export default function MediaPage() {
 
         {/* Glow */}
         <div className="absolute top-0 left-0 w-80 h-80 bg-[#FEC619]/10 rounded-full blur-3xl" />
+
         <div className="absolute bottom-0 right-0 w-80 h-80 bg-white/5 rounded-full blur-3xl" />
 
         <div className="relative max-w-5xl mx-auto px-6 text-center">
